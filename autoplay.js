@@ -27,9 +27,9 @@ function autoplayUnlock(element) {
     });
 }
 
-var autoplayUnlockElement = document.getElementById('autoplay-unlock-overlay');
+var autoplayUnlockElement = document.getElementById('frame');
 var audioElement = document.getElementById('audio-element');
-var videoElement = document.getElementById('video-element');
+var videoElement = document.getElementById('frame');
 
 autoplayUnlock(autoplayUnlockElement)
     .then(function() {
