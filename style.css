@@ -2,6 +2,8 @@ html, body, div, object, iframe, fieldset{
   margin: 0;
   padding: 0;
   border: 0;
+  height: 100%;
+  overflow: hidden;
 }
 #page-container {
   position: relative;
@@ -10,6 +12,11 @@ html, body, div, object, iframe, fieldset{
 
 #content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0px;
 }
 
 #footer {
