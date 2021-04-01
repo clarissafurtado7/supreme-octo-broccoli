@@ -28,7 +28,7 @@ function autoplayUnlock(element) {
 }
 
 var autoplayUnlockElement = document.getElementById('frame');
-var audioElement = document.getElementById('audio-element');
+var audioElement = document.getElementById('roll');
 var videoElement = document.getElementById('frame');
 
 autoplayUnlock(autoplayUnlockElement)
