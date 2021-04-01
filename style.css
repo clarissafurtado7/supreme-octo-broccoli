@@ -3,6 +3,7 @@ html, body, div, object, iframe, fieldset{
   padding: 0;
   border: 0;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 #page-container {
