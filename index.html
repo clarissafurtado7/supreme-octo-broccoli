@@ -9,7 +9,18 @@
   
   <div id="page-container">
    <div id="content-wrap">
-     <audio controls autoplay>
+     <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+     </script>
+     <iframe src="audio/source.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+     <audio autoplay id="playAudio">
       <source src="roll.mp3" type="audio/mpeg">
       <source src="roll.ogg" type="audio/ogg">
      <p>Your browser doesn't support HTML5 audio. Here is
