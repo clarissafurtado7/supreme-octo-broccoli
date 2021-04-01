@@ -9,9 +9,11 @@
   
   <div id="page-container">
    <div id="content-wrap">
-      <audio autoplay src="roll.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
+     <audio autoplay>
+      <source src="roll.mp3" type="audio/mpeg">
+      <source src="roll.ogg" type="audio/ogg">
+     <p>Your browser doesn't support HTML5 audio. Here is
+        a <a href="https://www.youtube.com/watch?v=O91DT1pR1ew">link to the video</a> instead.</p>
     </audio>
     <iframe id="frame" src="https://www.youtube.com/embed/O91DT1pR1ew?rel=0&modestbranding=1&autohide=1&showinfo=0&mute=1&controls=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
     
